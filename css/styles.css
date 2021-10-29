@@ -25,7 +25,7 @@ body{
 
 /*---------------------HEADER-----------------------------*/
 .header{
-    background-image: url(/assets/img/image-header.jpg);
+    background-image: url(../assets/img/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -156,7 +156,7 @@ body{
 .graphicphoto__design,
 .graphicphoto__photography {
     height: 80vh;
-    background-image: url(/assets/img/image-graphic-design.jpg);
+    background-image: url(../assets/img/image-graphic-design.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -168,7 +168,7 @@ body{
 }
 
 .graphicphoto__photography--img{
-    background-image: url(/assets/img/image-photography.jpg);
+    background-image: url(../assets/img/image-photography.jpg);
 }
 
 .graphicphoto__title{
