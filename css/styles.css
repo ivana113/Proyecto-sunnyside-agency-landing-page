@@ -308,8 +308,67 @@ body{
     gap: 25px;
 }
 
-@media screen and (max-width:375px){
 
+/*------------------------------RESPONSIVE----------------------------------*/
+
+@media screen and (max-width:768px){
+    .nav{
+        padding: 0 30px 0 30px; 
+    }
+
+    .nav__menu{
+       gap: 30px;
+    }
+
+    .header__title{
+        margin-top: 70px;
+        font-size: 3.125rem;
+    }
+
+    .transform__texts,
+    .stand__texts{
+        margin: 40px 50px;    
+    }   
+
+    .transform__title,
+    .stand__title{
+        font-size: 1.875rem;
+        margin-bottom: 20px;
+    }
+
+    .transform__paragrah,
+    .stand__paragrah{
+        margin-bottom: 30px;
+        font-size: 0.875rem;
+    }
+
+    .transform__link,
+    .stand__link {
+        font-size: 0.75rem;
+    }
+
+    .graphicphoto__content{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .graphicphoto__design,
+    .graphicphoto__photography {
+        height: 70vh;
+        background-position: unset;
+    }
+    .graphicphoto__title{
+        font-size: 1.875rem;
+        margin-top: 100px;
+    }
+    
+    .graphicphoto__paragrah{
+        margin: 0 100px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:480px){
     .nav__menu{
         margin-left: 65px;
         flex-direction: column;
@@ -321,10 +380,6 @@ body{
         padding:20px 0 ;
         width: 60%;
         display: none;
-    }
-
-    .nav__logo{
-        padding-left: 20px;
     }
 
     .nav__hamburguer{
@@ -344,8 +399,9 @@ body{
     .nav__menu.active{
         display: flex;
     }
+
     .header__title{
-        font-size: 2.813rem;
+        margin-top: 60px;
         letter-spacing: 4px;
     }
 
@@ -354,8 +410,8 @@ body{
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-    }   
-    
+    }
+
     .transform__content{
         display: flex;
         flex-direction:column-reverse;
@@ -363,23 +419,40 @@ body{
 
     .transform__texts,
     .stand__texts{
-        text-align: center;
-        margin: 50px;
-    }
+        margin: 40px 30px;  
+        text-align: center; 
+    }   
 
     .transform__title,
     .stand__title{
-        font-size: 1.875rem;
-    }
+        font-size: 2.5rem;
+        margin-bottom: 20px;
     
-    .graphicphoto__content{
-        display: flex;
-        flex-direction: column;
     }
 
+    .transform__paragrah,
+    .stand__paragrah{
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
+
+    .transform__link,
+    .stand__link {
+        font-size: 1rem;
+    }
+
+    .graphicphoto__design,
+    .graphicphoto__photography {
+        background-position: center;
+    }
+
+    .graphicphoto__title{
+        font-size: 1.875rem;
+        margin-top: 50px;
+    }
+    
     .graphicphoto__paragrah{
-        margin: 0 10px;
-        
+        margin: 0 60px;
     }
 
     .cards{
@@ -399,5 +472,25 @@ body{
     .gallery__images{
         width: 50%;
         height: 250px;
+    }
+}
+
+@media screen and (max-width:375px){
+
+    .nav__hamburguer{
+        padding: 0;
+    }
+
+    .header__title{
+        font-size: 2.813rem;
+    }
+
+    .transform__title,
+    .stand__title{
+        font-size: 1.875rem;
+    }
+
+    .graphicphoto__paragrah{
+        margin: 0 40px;
     }
 }
